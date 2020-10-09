@@ -1,0 +1,17 @@
+# OS generated files
+.DS_Store*
+Thumbs.db
+
+# Logs
+logs
+.log
+npm-debug.log*
+
+# Dependency Directory
+node_modules
+.npm
+.glitch-assets
+
+# Runtime data
+.data
+.env

@@ -1,0 +1,31 @@
+{
+  "name": "fcc-pinterestclone-app",
+  "version": "1.0.0",
+  "description": "Pinterest clone app for FreeCodeCamp.com",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.3",
+    "mongodb": "^2.2.28",
+    "mongoose": "^4.10.6",
+    "passport": "^0.3.2",
+    "passport-twitter": "^1.0.4",
+    "socket.io": "^2.0.3",
+    "ejs": "^3.0.2",
+    "ejs-lint": "^1.1.0",
+    "eslint-plugin-cde-ejs-html": "^1.0.7",
+    "grunt-ejslint": "^1.0.0",
+    "web-term": "^5.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattmilburn/fcc-pinterestclone-app.git"
+  },
+  "author": "Matt Milburn",
+  "license": "ISC"
+}

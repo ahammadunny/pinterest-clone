@@ -1,0 +1,37 @@
+<header class="page-header jumbotron">
+  <div class="container relative">
+    <h2>Pinterest Clone <small>Application</small></h2>
+    <p class="lead">by Matt Milburn</p>
+   
+    <nav class="page-nav">
+      <ul class="list-inline">
+        <li><a href="/" class="btn btn-link">All Pins</a></li>
+        <% if(user) { %>
+          <li><a href="/pins/<%=user._id %>" class="btn btn-link">My Pins</a></li>
+          <li>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#post-pin-modal">
+              Post New Pin
+              <span class="fa fa-thumb-tack"></span>
+            </a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" id="user-dropdown" data-toggle="dropdown">
+              <img src="<=user.twitter.thumbnail %>" class="profile-icon" alt="Profile image for <%=user.twitter.username %>">
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/logout" class="btn btn-link">Logout</a></li>
+            </ul>
+          </li>
+        <% }  else { %>
+          <li>
+            <a href="/auth/twitter" class="btn btn-info">
+              Login with Twitter
+              <span class="fa fa-twitter"></span>
+            </a>
+          </li>
+        <% } %>
+      </ul>
+    </nav>
+  </div>
+</header>

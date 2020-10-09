@@ -1,0 +1,102 @@
+.relative {
+  position: relative;
+}
+
+.page-header {
+  margin-top: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  
+  .page-nav {
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+  
+  .dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+}
+
+.page-title {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 24px;
+}
+
+.modal-footer {
+  text-align: center;
+}
+
+.panel {
+  margin-bottom: 0;
+}
+
+div.btn-default {
+  cursor: default;
+}
+
+.grid {
+  margin-bottom: 40px;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 50%;
+}
+
+.grid-item {
+  padding: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 989px) {
+  .grid-sizer,
+  .grid-item {
+    width: 33.33333333333333%;
+  }
+}
+
+@media (min-width: 990px) {
+  .grid-sizer,
+  .grid-item {
+    width: 20%;
+  }
+}
+
+.profile-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15);
+}
+
+.grid-item .profile-icon {
+  width: 24px;
+  height: 24px;
+  margin-top: 2px;
+  float: left;
+  margin-right: 6px;
+}
+
+.grid-item .panel-footer small {
+  line-height: 1.25;
+  display: inline-block;
+}
+
+.delete-btn {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
